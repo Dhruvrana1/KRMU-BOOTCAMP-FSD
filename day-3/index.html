@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+</style>
+<body>
+    <div class="head">
+    <h1>
+        WELCOME TO KR MANGALAM
+    </h1>
+
+    <BUTTOn> Change</BUTTOn>
+    </div>
+    <script>const heading = document.querySelector("h1");
+const button = document.querySelector("button");
+
+let changed = false;
+
+button.addEventListener("click", () => {
+    if (!changed) {
+        heading.innerText = "WELCOME TO BOOTCAMP";
+        heading.style.backgroundColor = "red";
+        heading.style.color = "white";
+        changed = true;
+    } else {
+        heading.innerText = "WELCOME TO KR MANGALAM";
+        heading.style.backgroundColor = "";
+        heading.style.color = "";
+        changed = false;
+    }
+});
+</script>
+</body>
+</html>
