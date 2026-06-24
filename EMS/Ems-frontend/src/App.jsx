@@ -12,7 +12,7 @@ function App() {
   });
 
 
-  const API_URL = "http://localhost:5100/employees";
+  const API_URL = "https://krmu-bootcamp-fsd-1.onrender.com/employees";
 
   // FETCH EMPLOYEES
 
